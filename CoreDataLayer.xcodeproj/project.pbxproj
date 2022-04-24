@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E54E3D822815D7C800732E9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E3D812815D7C800732E9C /* AppDelegate.swift */; };
-		E54E3D842815D7C800732E9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E3D832815D7C800732E9C /* SceneDelegate.swift */; };
 		E54E3D862815D7C800732E9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E3D852815D7C800732E9C /* ViewController.swift */; };
 		E54E3D892815D7C800732E9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E54E3D872815D7C800732E9C /* Main.storyboard */; };
 		E54E3D8C2815D7C800732E9C /* CoreDataLayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E54E3D8A2815D7C800732E9C /* CoreDataLayer.xcdatamodeld */; };
@@ -18,12 +17,13 @@
 		E54E3D9E2815D82500732E9C /* ConfigurationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E3D9B2815D82100732E9C /* ConfigurationType.swift */; };
 		E54E3D9F2815D82500732E9C /* StorageContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E3D9A2815D82100732E9C /* StorageContext.swift */; };
 		E54E3DA02815D82500732E9C /* Sorted.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E3D9C2815D82100732E9C /* Sorted.swift */; };
+		E54E3DA22815D8B500732E9C /* CoreDataStorageContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E3DA12815D8B500732E9C /* CoreDataStorageContext.swift */; };
+		E54E3DA42815D8CE00732E9C /* CoreDataStoreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E3DA32815D8CE00732E9C /* CoreDataStoreCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E54E3D7E2815D7C800732E9C /* CoreDataLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataLayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E54E3D812815D7C800732E9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E54E3D832815D7C800732E9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E54E3D852815D7C800732E9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E54E3D882815D7C800732E9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E54E3D8B2815D7C800732E9C /* CoreDataLayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataLayer.xcdatamodel; sourceTree = "<group>"; };
@@ -34,6 +34,8 @@
 		E54E3D9A2815D82100732E9C /* StorageContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageContext.swift; sourceTree = "<group>"; };
 		E54E3D9B2815D82100732E9C /* ConfigurationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationType.swift; sourceTree = "<group>"; };
 		E54E3D9C2815D82100732E9C /* Sorted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorted.swift; sourceTree = "<group>"; };
+		E54E3DA12815D8B500732E9C /* CoreDataStorageContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorageContext.swift; sourceTree = "<group>"; };
+		E54E3DA32815D8CE00732E9C /* CoreDataStoreCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStoreCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				E54E3D812815D7C800732E9C /* AppDelegate.swift */,
-				E54E3D832815D7C800732E9C /* SceneDelegate.swift */,
 				E54E3D852815D7C800732E9C /* ViewController.swift */,
 				E54E3D872815D7C800732E9C /* Main.storyboard */,
 				E54E3D8D2815D7CE00732E9C /* Assets.xcassets */,
@@ -86,6 +87,8 @@
 				E54E3D9C2815D82100732E9C /* Sorted.swift */,
 				E54E3D992815D82000732E9C /* Storable.swift */,
 				E54E3D9A2815D82100732E9C /* StorageContext.swift */,
+				E54E3DA32815D8CE00732E9C /* CoreDataStoreCoordinator.swift */,
+				E54E3DA12815D8B500732E9C /* CoreDataStorageContext.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -162,13 +165,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E54E3DA02815D82500732E9C /* Sorted.swift in Sources */,
+				E54E3DA42815D8CE00732E9C /* CoreDataStoreCoordinator.swift in Sources */,
 				E54E3D862815D7C800732E9C /* ViewController.swift in Sources */,
 				E54E3D9F2815D82500732E9C /* StorageContext.swift in Sources */,
 				E54E3D9D2815D82500732E9C /* Storable.swift in Sources */,
 				E54E3D822815D7C800732E9C /* AppDelegate.swift in Sources */,
 				E54E3D8C2815D7C800732E9C /* CoreDataLayer.xcdatamodeld in Sources */,
 				E54E3D9E2815D82500732E9C /* ConfigurationType.swift in Sources */,
-				E54E3D842815D7C800732E9C /* SceneDelegate.swift in Sources */,
+				E54E3DA22815D8B500732E9C /* CoreDataStorageContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
