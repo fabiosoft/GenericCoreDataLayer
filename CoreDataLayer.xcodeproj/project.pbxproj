@@ -25,6 +25,7 @@
 		E54E3DAE2815D9EB00732E9C /* Runtime in Frameworks */ = {isa = PBXBuildFile; productRef = E54E3DAD2815D9EB00732E9C /* Runtime */; };
 		E54E3DB22815DA9100732E9C /* BaseDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E3DB02815DA8300732E9C /* BaseDao.swift */; };
 		E54E3DB52815DAFB00732E9C /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E3DB42815DAFB00732E9C /* DBManager.swift */; };
+		E54E3DB82815DC1400732E9C /* StoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E3DB72815DC1000732E9C /* StoryEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		E54E3DA82815D96200732E9C /* DomainBaseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainBaseEntity.swift; sourceTree = "<group>"; };
 		E54E3DB02815DA8300732E9C /* BaseDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDao.swift; sourceTree = "<group>"; };
 		E54E3DB42815DAFB00732E9C /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		E54E3DB72815DC1000732E9C /* StoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		E54E3D802815D7C800732E9C /* CoreDataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				E54E3DB62815DBA800732E9C /* Models */,
 				E54E3D812815D7C800732E9C /* AppDelegate.swift */,
 				E54E3D852815D7C800732E9C /* ViewController.swift */,
 				E54E3D872815D7C800732E9C /* Main.storyboard */,
@@ -124,6 +127,14 @@
 				E54E3DB42815DAFB00732E9C /* DBManager.swift */,
 			);
 			path = "Data Access Object";
+			sourceTree = "<group>";
+		};
+		E54E3DB62815DBA800732E9C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E54E3DB72815DC1000732E9C /* StoryEntity.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +228,7 @@
 				E54E3DA92815D97700732E9C /* DomainBaseEntity.swift in Sources */,
 				E54E3DB22815DA9100732E9C /* BaseDao.swift in Sources */,
 				E54E3DB52815DAFB00732E9C /* DBManager.swift in Sources */,
+				E54E3DB82815DC1400732E9C /* StoryEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
