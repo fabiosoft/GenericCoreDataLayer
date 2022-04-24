@@ -30,6 +30,7 @@
 		E54E3DBC2815DCA000732E9C /* StoryDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E3DBB2815DCA000732E9C /* StoryDao.swift */; };
 		E54E3DBE2815DCB400732E9C /* StoryDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E3DBD2815DCB400732E9C /* StoryDBManager.swift */; };
 		E54E3DC12815DD6300732E9C /* StoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E3DC02815DD6300732E9C /* StoryService.swift */; };
+		E54E3DC42815DE5D00732E9C /* Runtime in Frameworks */ = {isa = PBXBuildFile; productRef = E54E3DC32815DE5D00732E9C /* Runtime */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E54E3DAE2815D9EB00732E9C /* Runtime in Frameworks */,
+				E54E3DC42815DE5D00732E9C /* Runtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +177,7 @@
 			name = CoreDataLayer;
 			packageProductDependencies = (
 				E54E3DAD2815D9EB00732E9C /* Runtime */,
+				E54E3DC32815DE5D00732E9C /* Runtime */,
 			);
 			productName = CoreDataLayer;
 			productReference = E54E3D7E2815D7C800732E9C /* CoreDataLayer.app */;
@@ -206,6 +209,7 @@
 			mainGroup = E54E3D752815D7C800732E9C;
 			packageReferences = (
 				E54E3DAC2815D9EB00732E9C /* XCRemoteSwiftPackageReference "Runtime" */,
+				E54E3DC22815DE5D00732E9C /* XCRemoteSwiftPackageReference "Runtime" */,
 			);
 			productRefGroup = E54E3D7F2815D7C800732E9C /* Products */;
 			projectDirPath = "";
@@ -480,10 +484,23 @@
 				version = 2.2.4;
 			};
 		};
+		E54E3DC22815DE5D00732E9C /* XCRemoteSwiftPackageReference "Runtime" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wickwirew/Runtime";
+			requirement = {
+				kind = exactVersion;
+				version = 2.2.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		E54E3DAD2815D9EB00732E9C /* Runtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E54E3DAC2815D9EB00732E9C /* XCRemoteSwiftPackageReference "Runtime" */;
+			productName = Runtime;
+		};
+		E54E3DC32815DE5D00732E9C /* Runtime */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E54E3DAC2815D9EB00732E9C /* XCRemoteSwiftPackageReference "Runtime" */;
 			productName = Runtime;
