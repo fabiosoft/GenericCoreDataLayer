@@ -26,6 +26,9 @@
 		E54E3DB22815DA9100732E9C /* BaseDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E3DB02815DA8300732E9C /* BaseDao.swift */; };
 		E54E3DB52815DAFB00732E9C /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E3DB42815DAFB00732E9C /* DBManager.swift */; };
 		E54E3DB82815DC1400732E9C /* StoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E3DB72815DC1000732E9C /* StoryEntity.swift */; };
+		E54E3DBA2815DC7600732E9C /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E3DB92815DC7500732E9C /* Story.swift */; };
+		E54E3DBC2815DCA000732E9C /* StoryDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E3DBB2815DCA000732E9C /* StoryDao.swift */; };
+		E54E3DBE2815DCB400732E9C /* StoryDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E3DBD2815DCB400732E9C /* StoryDBManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,9 @@
 		E54E3DB02815DA8300732E9C /* BaseDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDao.swift; sourceTree = "<group>"; };
 		E54E3DB42815DAFB00732E9C /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		E54E3DB72815DC1000732E9C /* StoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryEntity.swift; sourceTree = "<group>"; };
+		E54E3DB92815DC7500732E9C /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		E54E3DBB2815DCA000732E9C /* StoryDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDao.swift; sourceTree = "<group>"; };
+		E54E3DBD2815DCB400732E9C /* StoryDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDBManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,9 @@
 			isa = PBXGroup;
 			children = (
 				E54E3DB72815DC1000732E9C /* StoryEntity.swift */,
+				E54E3DB92815DC7500732E9C /* Story.swift */,
+				E54E3DBB2815DCA000732E9C /* StoryDao.swift */,
+				E54E3DBD2815DCB400732E9C /* StoryDBManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -215,12 +224,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E54E3DA02815D82500732E9C /* Sorted.swift in Sources */,
+				E54E3DBC2815DCA000732E9C /* StoryDao.swift in Sources */,
 				E54E3DA42815D8CE00732E9C /* CoreDataStoreCoordinator.swift in Sources */,
 				E54E3D862815D7C800732E9C /* ViewController.swift in Sources */,
 				E54E3D9F2815D82500732E9C /* StorageContext.swift in Sources */,
 				E54E3DAA2815D97700732E9C /* Mapper.swift in Sources */,
 				E54E3D9D2815D82500732E9C /* Storable.swift in Sources */,
+				E54E3DBE2815DCB400732E9C /* StoryDBManager.swift in Sources */,
 				E54E3D822815D7C800732E9C /* AppDelegate.swift in Sources */,
+				E54E3DBA2815DC7600732E9C /* Story.swift in Sources */,
 				E54E3DAB2815D97700732E9C /* Mappable.swift in Sources */,
 				E54E3D8C2815D7C800732E9C /* CoreDataLayer.xcdatamodeld in Sources */,
 				E54E3D9E2815D82500732E9C /* ConfigurationType.swift in Sources */,
