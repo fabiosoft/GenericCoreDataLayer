@@ -24,6 +24,7 @@
 		E54E3DAB2815D97700732E9C /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E3DA62815D95700732E9C /* Mappable.swift */; };
 		E54E3DAE2815D9EB00732E9C /* Runtime in Frameworks */ = {isa = PBXBuildFile; productRef = E54E3DAD2815D9EB00732E9C /* Runtime */; };
 		E54E3DB22815DA9100732E9C /* BaseDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E3DB02815DA8300732E9C /* BaseDao.swift */; };
+		E54E3DB52815DAFB00732E9C /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E3DB42815DAFB00732E9C /* DBManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		E54E3DA72815D96200732E9C /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		E54E3DA82815D96200732E9C /* DomainBaseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainBaseEntity.swift; sourceTree = "<group>"; };
 		E54E3DB02815DA8300732E9C /* BaseDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDao.swift; sourceTree = "<group>"; };
+		E54E3DB42815DAFB00732E9C /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				E54E3DB02815DA8300732E9C /* BaseDao.swift */,
+				E54E3DB42815DAFB00732E9C /* DBManager.swift */,
 			);
 			path = "Data Access Object";
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				E54E3DA22815D8B500732E9C /* CoreDataStorageContext.swift in Sources */,
 				E54E3DA92815D97700732E9C /* DomainBaseEntity.swift in Sources */,
 				E54E3DB22815DA9100732E9C /* BaseDao.swift in Sources */,
+				E54E3DB52815DAFB00732E9C /* DBManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
